@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ac-uf-data-api-deployment
+  labels:
+    app: ac-uf-data-api-pod
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: ac-uf-data-api-pod
+  template:
+    metadata:
+      labels:
+        app: ac-uf-data-api-pod
+    spec:
+      containers:
+      - name: ac-uf-data-api-pod
+        image: xxx/ac-uf-data-api:latest
+        readinessProbe:
+          httpGet:
+            path: /actuator/health
+            port: 8080
+          initialDelaySeconds: 40
+          timeoutSeconds: 2
+          periodSeconds: 3
+          failureThreshold: 2
+        livenessProbe:
+          httpGet:
+            path: /actuator/health
+            port: 8080
+          initialDelaySeconds: 100
+          timeoutSeconds: 2
+          periodSeconds: 8
+          failureThreshold: 1 
+        ports:
+        - containerPort: 8080      		
