@@ -1,7 +1,7 @@
 # master-degree-simulate
 Simulating and proposing systems for National Brazilian Authentication
 
-Inside this repository we have 10 projects
+Inside this repository I have 10 projects:
 1. API Data Acre State Simulator - Java
 2. Kafka Worker Acre State Simulator - Java
 3. API Data Sao Paulo State Simulator - Java
