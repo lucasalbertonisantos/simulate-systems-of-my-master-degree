@@ -1,0 +1,4 @@
+
+enum LoginStatusEnum {
+  CREATED_LOGIN, SEARCHING_DATA, PENDING_LOGIN,
+}
