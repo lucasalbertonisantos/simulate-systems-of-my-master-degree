@@ -21,7 +21,7 @@ class DialogoBuscandoDados extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.all(8.0),
           child: Text(
-            'Certifique-se que informou o CPF corretamente.',
+            'Certifique-se de que informou o CPF corretamente.',
             style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 25,
@@ -31,7 +31,7 @@ class DialogoBuscandoDados extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.all(8.0),
           child: Text(
-            'Caso tenha digitado corretamente, tente novamente tente mais tarde.',
+            'Caso tenha digitado corretamente, tente novamente mais tarde.',
             style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 25,

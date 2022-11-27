@@ -16,7 +16,7 @@ public class EmailService {
         msg.setTo(email);
 
         msg.setSubject("Definição de senha");
-        msg.setText("Acesse o link :" + url+"?acesso="+jwtToken+" para liberar o seu login! Mas atenção, esse link só ficará valido pelos próximos 9 minutos! A senha gerada foi: " + senha + ". É aconselhável troca-la no primeiro acesso.");
+        msg.setText("Acesse o link :" + url+"?acesso="+jwtToken+" para liberar o seu login! Mas atenção, esse link só ficará válido pelos próximos 9 minutos! A senha gerada foi: " + senha + ". É aconselhável troca-la no primeiro acesso.");
 
         javaMailSender.send(msg);
 	}
@@ -32,7 +32,7 @@ public class EmailService {
         msg.setTo(email);
 
         msg.setSubject("Liberação de dados para empresa "+ nomeEmpresa);
-        msg.setText("Para liberar os seus dados para a empresa de CNPJ: " + cnpjEmpresa + " e nome: " + nomeEmpresa + " acesse o link :" + url+"?acesso="+jwtToken+". Esse link só ficará valido pelos próximos 9 minutos. O código necessário para utilização do serviço da empresa é: "+codigoLiberacaoEmpresa);
+        msg.setText("Para liberar os seus dados para a empresa de CNPJ: " + cnpjEmpresa + " e nome: " + nomeEmpresa + " acesse o link :" + url+"?acesso="+jwtToken+". Esse link só ficará válido pelos próximos 9 minutos. O código necessário para utilização do serviço da empresa é: "+codigoLiberacaoEmpresa);
 
         javaMailSender.send(msg);
 	}

@@ -49,7 +49,7 @@ class VerificarCpf extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Text(
-                  'Para iniciar precisamos que informe o seu CPF para que possamos encontrar seus dados e identificar se possuí cadastro.',
+                  'Para iniciar precisamos que informe o seu CPF para que possamos encontrar seus dados e identificar se possui cadastro.',
                   style: TextStyle(fontSize: 25, color: Colors.grey),
                 ),
               ),

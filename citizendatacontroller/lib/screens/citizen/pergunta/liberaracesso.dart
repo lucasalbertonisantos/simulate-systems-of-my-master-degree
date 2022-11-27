@@ -33,7 +33,7 @@ class LiberarAcesso extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Text(
-                  'Nesse momento pediomos que você acesse o email cadastrado para confirmação do acesso.',
+                  'Nesse momento pedimos que você acesse o email cadastrado para confirmação do acesso.',
                   style: TextStyle(fontSize: 25, color: Colors.grey),
                 ),
               ),
